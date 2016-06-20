@@ -57,3 +57,62 @@ figure{
     top: -155px;
     left: 15rem;
 }
+
+.sidebar2 {
+	float: left;
+	width: 20%;
+	background-color: lightseagreen;
+	padding: 10px 0;
+}
+
+.container{
+    width: 80%;
+    max-width: 1260px;
+    min-width: 780px;
+    background-color: #FFF;
+    margin: 0 auto;
+}
+
+.fltrt {
+	float: right;
+	margin-left: 8px;
+}
+
+table{
+    table-layout: auto;
+    border-collapse: collapse;
+    margin: auto;
+    border: 2px solid black;
+}
+
+thead{
+    background-color: #000;
+    color:#FFF;
+    text-align:  center;
+}
+
+thead td{
+    border-left: 1px solid white;
+}
+
+tbody td{
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+caption{
+    caption-side: bottom;
+    margin-top: 1rem;  
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+.imagenes{
+    margin: auto;
+}
