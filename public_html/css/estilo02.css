@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/*fuente importada a nuestra pagina web*/
+@font-face {
+    font-family: '28_days_laterregular';
+    src: url('../font/28_days_later-webfont.woff2') format('woff2'),
+         url('../font/28_days_later-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    color:#6633ff;
+    font-size: 18px;
+    font-family: 'Roboto', Helvetica ,sans-serif;
+}
+h1{
+    color:red;
+}
+h2, ol>li{
+    font-size: 26px;
+}
+li[lang="ca"]{
+    /*solo para etiquetas li que tengan un atributo lang con valor "ca"*/
+    text-decoration: underline;
+}
+/*para cualquier descendiente de li*/
+li [lang="ca"]{    
+    font-weight: bold;
+}
+/*mientras tenga la palabra me en la opinion marca la palabra*/
+[data-opinion~="me"]{
+    color:brown;
+}
+/*primera linea en amarillo*/
+p::first-line{
+    background-color:yellow; 
+}
+
+/*primera letra de cada parrafo super grande*/
+p::first-letter{
+    font-size: 50px;
+    font-weight: 30px;
+    color: black;
+}
+
+ol li:nth-child(2n+1){
+    /*se empieza primero por el 1 no por el 0 como en programacion*/
+    /*descendientes de ol*/
+    /*pinta la filas impares*/
+    background-color:lightgray;
+}
+/*pinta las filas pares*/
+ol li:nth-child(2n){
+    background-color:beige;
+}
+ol>li::first-letter{
+    font-size: 50px;
+    color: #333;   
+}
+h1, h2{
+    font-family: 'Akronim', cursive;
+}
+ul{
+    font-family: '28_days_laterregular';
+    font-size: 45px;
+}

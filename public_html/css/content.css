@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/*h2:after, h2:before{
+    content:"\2605"; se tiene que poner caracter unicode
+    color:gold;
+}*/
+
+.one-star:after{
+    content:"\2605"; 
+    color:gold;
+}
+.two-star:after{
+   content:"\2605\2605"; 
+   color:gold;     
+}
+
+/*parrafos con citas incluidas*/
+p{
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+p:before, p:after{
+    color:red;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+p:before{
+    content: open-quote;
+}
+
+p:after{
+    content: close-quote;    
+}
+
+
+/*hacer contadores de elementos de episodios*/
+body{
+    counter-reset: episodi;
+}
+
+h1:before{
+    content: counter(episodi)". ";
+    counter-increment: episodi;
+}
+
+h1{
+   counter-reset: capitol;
+}
+
+h2:before{
+    content: counter(episodi) "."
+    counter(capitol)". ";
+    counter-increment: capitol;
+}
+
+/*deja sin estilos la lista*/
+ul{
+    list-style-type: none;    
+}
+/*el 0020 es el espacio en blanco*/
+ul li:before{
+    content: "\1f355\0020";
+}
+ol{
+    list-style-type: decimal;
+}

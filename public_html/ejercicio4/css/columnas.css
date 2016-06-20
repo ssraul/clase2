@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'rosario', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+h1{
+    font-size: 1.5rem;
+    color:#00b3ff;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-size: 1.5rem;
+    background: gold;
+    color:skyblue;
+    margin-top: 20px;
+}
+figure{
+    border: 1px solid burlywood;
+    align-content: center;
+}
+
+h3{
+    font-size: 1rem;
+    color:red;
+    margin-top:30px;
+}
+
+#text{
+    margin-top: 50px;
+    column-count: 3;
+    column-rule: 2px dotted green;
+}
+
+figcaption{
+    text-align: center;
+}
+
+p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+

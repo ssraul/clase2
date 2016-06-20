@@ -1,0 +1,47 @@
+body{
+    font-family: monospace;
+}
+
+h1{
+    color:#6633ff;
+}
+p{
+    color:#7C7C7C;
+}
+.rojo{
+    color:crimson;
+}
+#verde{
+    color:aquamarine;
+}
+p b{
+    color:blue;
+}
+/*cualquier em dentro de la etiqueta p*/
+p em{
+    color:bisque;
+}
+/*cuando em es hija de p*/
+p>em{
+    color:black;
+}
+
+/*son hermanos y tienen que estar seguidos, solo se aplica a la ultima etiqueta en este caso la i*/
+em+i{
+    color:darkorchid;
+}
+
+h1, p{
+    font-size: 38px;
+}
+.lletra_petita{
+    font-size: 14px;
+}
+/*al pasar por encima de cualquier parrafo*/
+p:hover{
+    color:blueviolet;
+    font-weight: bold;
+}
+h1:focus{
+    color:yellow;
+}

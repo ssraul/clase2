@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'porter_sans_blockblock';
+    src: url('../fonts/porter-sans-inline-block-webfont.eot');
+    src: url('../fonts/porter-sans-inline-block-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/porter-sans-inline-block-webfont.woff') format('woff'),
+         url('../fonts/porter-sans-inline-block-webfont.ttf') format('truetype'),
+         url('../fonts/porter-sans-inline-block-webfont.svg#porter_sans_blockblock') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dejimamincho';
+    src: url('../fonts/dejima-mincho-r227-webfont.woff2') format('woff2'),
+         url('../fonts/dejima-mincho-r227-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    color:hsl(0,40%,20%);
+    font-size: 14pt;
+    font-family: 'Rosario', sans-serif;
+    line-height: 1.5rem;
+    text-align: justify;
+    
+    font-weight: normal;
+    witdh: 80vw;
+    margin: 2rem auto;
+}
+
+:lang(ja), [lang="ja"]{
+    font-family: 'dejimamincho',serif;
+    
+}
+
+h1{
+    font-size: 3rem;
+    line-height: 2rem;
+    color:teal;
+    font-stretch: ultra-expanded;
+    font-family: 'porter_sans_blockblock', serif;
+    text-align: right;
+    text-align: end;
+    text-transform: uppercase;
+    text-shadow: yellow 2px 2px 5px;
+    letter-spacing: 0.25rem;
+    word-spacing: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+
+h2{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: blue;
+    font-stretch: ultra-expanded;
+    font-family: 'Lobster',sans-serif;
+    text-transform:uppercase;
+    text-decoration: underline;
+    margin: 1.5rem 0;
+    text-align: right;
+}
+
+h2:nth-of-type(3n){
+    color:pink;
+}
+
+h2:nth-of-type(3n-1){
+    color:green;
+}
+
+
+ul{
+    list-style: none;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.5em;
+    
+}
+
+p{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align-last: left;
+    text-indent: 5rem;
+}
+
+ol{
+    margin-left: 70px;
+}
+
+ul li:nth-child(2n+1){
+    background-color:white; 
+}
+ul li:nth-child(2n){
+    background-color:inactivecaption
+}
+sup{
+    font-size: 0.6rem;
+    vertical-align: super;
+    line-height: normal;
+    
+}
+
+.gris{
+    color:grey;
+}
+
+p.topo1{
+    font-size: 1.2rem;
+}
+p.topo2{
+    font-size: smaller;
+    letter-spacing: 0.3rem;
+    
+}
+.haiku{
+    /*all:initial;*/
+    text-indent: 0;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+    text-align-last: center;
+    
+}
+.turisme{
+    text-align: right;
+}
+.demografia{
+    /*white-space: pre;*/
+    text-align: right;
+}

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+#reloj{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 10rem;
+    color:yellowgreen;
+    text-align: center;
+    border: yellowgreen 8px solid;   
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+#tres{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 6rem;
+    background-color: #FFF;
+    color:#FFF;
+    margin: auto;
+    width: 400px;
+    height: 400px; 
+    border-collapse: collapse;
+    border: 10px solid #000;   
+}
+
+#tres tr, #tres td{
+  padding: 10px;
+  background-color: black;
+  border-bottom: 2px solid #FFF;
+  border-right:  2px solid #FFF;
+}
+
+
+#contabilidad {
+    font-size: 2rem;
+    background-color: #ffffff;
+    border-color: #000;
+    border-width: 2px;
+    border-style: solid;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    caption-side: bottom;
+    border-collapse: collapse;
+    
+}
+#contabilidad thead tr, #contabilidad thead td{
+    background-color: #000;
+    color:#FFF;
+    border: 1px solid #ffffff;
+}
+#contabilidad tfoot tr, #contabilidad tfoot td {
+    background-color: gold;
+    color:#000;
+    border-top: 6px double red; 
+    padding: 5px;
+    
+}
+
+#contabilidad tbody tr:nth-child(2n){
+    background-color: pink;
+    border: 1px solid black;
+}
+
+#sudoku{
+    margin:auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 2rem;
+    font-weight:  bold;
+    text-align: center;
+}
+
+
+#sudoku tr, #sudoku td{
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+}
+
+#sudoku td:nth-child(3n){
+    border-right: 2px solid #000;
+}
+
+#sudoku tr:nth-child(3n){
+    border-bottom: 2px solid #000;
+}
+
+#ajedrez{
+    border-collapse: collapse;
+    border: 4px double #000;
+    font-size: 2rem;
+    margin:auto;
+}
+#ajedrez tr, #ajedrez td{
+    border: 1px solid  #000;
+    width: 40px;
+    height: 40px;
+}
+
+#ajedrez tr:nth-child(2n+1) td:nth-child(2n){   
+    background: #cccccc;
+}
+
+#ajedrez tr:nth-child(2n) td:nth-child(2n+1){    
+    background: #cccccc;
+}
+

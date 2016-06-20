@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.taula{
+    display: table;
+}
+.fila{
+    display: table-row;
+}
+.columna{
+    display: table-cell;
+    padding: 1rem;
+}
