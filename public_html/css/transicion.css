@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+#transition-01{
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    position:  absolute;
+    top:100px;
+    left:100px;
+    text-align: center;
+    font-size: 18px;
+    font-family: monospace;
+}
+

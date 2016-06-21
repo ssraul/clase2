@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+div{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+}
+
+#flex-container-01, #flex-container-02{
+    /*con el vw podemos hacer ressponsive la pantalla*/
+    width: 90vw;
+    height: 500px;
+    display: flex;
+    /*las medidas de los items se tienen que definir en el container*/
+    /*aqui definimos el minimo de tamaño que tiene el item*/
+    min-width: 100px;
+    min-height: 100px;
+    /*define el sentido y la colocacion de los items dentro del container*/
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+
+/*expresion para decir todos los elementos que empiezen por flex-item-*/
+div[id^="flex-item-"]{
+    width: 150px;
+    height: 150px;
+    /**/
+/*    flex-basis: 50px;*/
+}
+
+#flex-item-01{
+    background-color: #00b3ff;
+    order:2;
+    /*mientras haya espacio aumenta por 3 su tamaño*/
+    flex-grow: 3;
+    /*para encoger el item mientras se hace peq la pantalla*/
+    flex-shrink: 4;
+}
+
+#flex-item-02{
+    background-color: brown;
+    order:1;
+    /*mientras haya espacio en el container aumenta por 2 su tamaño*/
+    flex-grow: 2;
+    flex-shrink: 3;
+}
+
+#flex-item-03{
+    background-color: chartreuse;
+    order:3;
+    flex-shrink: 0.5;
+}
+
+#flex-item-04{
+    background-color: cornflowerblue;
+    align-self: flex-end;
+}
+
+#flex-item-05{
+    background-color:#dcdcdc;
+}
+
+#flex-item-06{
+    background-color:yellow;
+}
+
+#flex-container-02{
+    justify-content: space-around;
+    /*para que funcione se han de sacar los valores minimos de width y height*/
+    /*con el align-item stretch*/
+    align-items: start;
+}
