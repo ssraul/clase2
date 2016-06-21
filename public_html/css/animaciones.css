@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+#fantasma{
+    font-size: 96px;
+    color:lawngreen;
+    position:fixed;
+    top:100px;
+    left:25px;
+    /*ponerlo mirando hacia la derecha*/
+    transform: scaleX(-1);
+    
+    /*definimos la animación*/
+    animation-name: phantom;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes phantom{
+    
+    /*inicio*/
+    from {
+        
+    }
+    /*en medio*/
+    50% {
+        color:red;
+        top:190px;
+        left:195px;
+        transform: scale(0.5);
+    }
+    /*al final del ciclo*/
+    to {
+        
+        color:black;
+        top:0px;
+        left:400px;
+        transform: none;
+        
+    }
+}

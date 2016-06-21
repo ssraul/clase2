@@ -1,14 +1,34 @@
 @charset "UTF-8";
 
 #transition-01{
-    background-color: red;
+    
     width: 150px;
     height: 150px;
     position:  absolute;
-    top:100px;
-    left:100px;
+    top:100px;  
     text-align: center;
+  
+    /*valores iniciales*/
+    background-color: red;
+    left:100px;
+    color:black;
     font-size: 18px;
     font-family: monospace;
+    
+    /*primero definimos la transicion y los valores que queremos modificar*/
+    transition-property: background-color, font-family, font-size, color, left, transform;    
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0.5s;
+    
 }
 
+#transition-01:hover{
+    /*valores finales*/
+    background-color: #ffffff;
+    left:1000px;
+    color:black;
+    font-size: 500px;
+    font-family: sans-serif;
+    transform: rotate(360deg);    
+}
