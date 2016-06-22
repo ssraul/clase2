@@ -9,26 +9,22 @@
         <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
     </head>
     <body>
-        <div class="container">
 
             <header>           
                 <h1>Mis recetas. Pulpo a la gallega</h1>
             </header>
-
+            <section>
             <figure>
-                <img src="media/pulpo.jpg" width="175" height="150"/>    
+                <a href="media/pulpo.jpg"><img src="media/pulpo.jpg" width="175" height="150"/></a>    
                 <figcaption>Pulpo a la gallega</figcaption>
-            </figure>
-
-            <div id="pos1">
-                <p>El pulpo a la gallega (en gallego polbo á feira o pulpo á feira) es un plato tradicional 
+            </figure><br>
+                
+                <p>El pulpo a la gallega (en gallego <span lang="gl">polbo á feira o pulpo á feira</span>) es un plato tradicional 
                     de Galicia y básico en su gastronomía,1 aunque su consumo se ha generalizado por toda 
                     España. Se trata de un plato festivo elaborado con pulpo cocido entero (generalmente en 
                     ollas de cobre) que está presente en las fiestas, ferias y romerías de Galicia y El 
-                    Bierzo (León),2 de ahí su nombre "á feira". La cocción se realiza tradicionalmente por 
+                    Bierzo (León),2 de ahí su nombre <span lang="gl" >á feira</span>. La cocción se realiza tradicionalmente por 
                     las pulpeiras, suele servirse en la actulidad frecuentemente como tapa.</p>
-            </div>
-
 
             <h2>Ingredientes (4 personas)</h2>
 
@@ -67,18 +63,18 @@
                 una tijera, colocando las patatas y los trozos de pulpo en platos individuales de madera. Por 
                 último, en el momento de servir se aliña sobre el pulpo un chorro de aceite de oliva y 
                 espolvorear con el pimentón dulce, el pimentón picante y abundante sal gruesa.</p>
-            
+
             <div class="imagenes">
-            <figure>
-                <img src="media/Pota_de_Polbo_a_feira.jpg" alt="pulpo1"/>
-                <img src="media/Polbeira,_A_Coruna,_Galiza.jpg" alt="mujer con pulpo"/>
-                <img src="media/pulpo_feira.jpg" alt="pulpo2"/>
-                <figcaption>Preparación del plato</figcaption>
-            </figure>
+                <figure id="tres-imagenes">
+                    <img src="media/Pota_de_Polbo_a_feira.jpg" alt="pulpo1"/>
+                    <img src="media/Polbeira,_A_Coruna,_Galiza.jpg" alt="mujer con pulpo"/>
+                    <img src="media/pulpo_feira.jpg" alt="pulpo2"/>
+                    <figcaption id="caption2">Preparación del plato</figcaption>
+                </figure>
             </div>
 
             <h2>Otros platos de pulpo</h2>
-            
+
             <table>
                 <caption>Cocinando pulpo</caption>
                 <thead>
@@ -90,36 +86,45 @@
                     <tr><td>Pulpo al horno </td><td><a href="">http://pulpo-al-horno.recetascomidas.com/</a></td></tr>
                 </tbody>
             </table>
-            
+
             <h2>Referencias</h2>
-
-            Cunqueiro, Álvaro (2005). Galaxia. ed. La Cocina Gallega (primera edición). 
-            pp. 87 - 89. ISBN 84-8288-706-8.
-            Pascual, Carlos (1977). Al-Borak. ed. Guía Gastronómica de España (1ª edición). Madrid. 
-            pp. 323. ISBN 84-7007-047-9.
-
-            <div class="fltrt">
+            <ol>
+                <li>Cunqueiro, Álvaro (2005). Galaxia. ed. La Cocina Gallega (primera edición). 
+                    pp. 87 - 89. ISBN 84-8288-706-8.</li>
+                <li>Pascual, Carlos (1977). Al-Borak. ed. Guía Gastronómica de España (1ª edición). Madrid. 
+                    pp. 323. ISBN 84-7007-047-9.</li>
+            </ol>
+           
+            </section>
+            <aside>
                 <h2>Varios</h2>
                 <h3>Vídeo</h3>
-                http://www.youtube.com/embed/ZkXOVmwnMSc
-
+                <iframe  src="http://www.youtube.com/embed/ZkXOVmwnMSc" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <h3>Codiguitos. Ordenación por burbuja</h3>
+                <pre>
+<code>
+para i=1 hasta n-1
+    minimo = i;
+    para j=i+1 hasta n
+        si lista[j] < lista[minimo] entonces
+            minimo = j /* (!) */
+        fin si
+    fin para
+    intercambiar(lista[i], lista[minimo])
+fin para
+</code>
+                </pre>
 
-                para i=1 hasta n-1
-                minimo = i;
-                para j=i+1 hasta n
-                si lista[j] < lista[minimo] entonces
-                minimo = j /* (!) */
-                fin si
-                fin para
-                intercambiar(lista[i], lista[minimo])
-                fin para
 
                 <h3>Cita del día</h3>
-                Confucio (551 AC-478 AC)
+                <blockquote>
+                    <address>Confucio (551 AC-478 AC)</address>
 
-                Cuando veáis a un hombre sabio, pensad en igualar sus virtudes. Cuando veáis un 
-                hombre desprovisto de virtud, examinaos vosotros mismos. 
+                    <cite>
+                        Cuando veáis a un hombre sabio, pensad en igualar sus virtudes. Cuando veáis un 
+                        hombre desprovisto de virtud, examinaos vosotros mismos. 
+                    </cite>
+                </blockquote>
 
                 <h3>Fórmula del día</h3>
 
@@ -128,10 +133,13 @@
                 <h3>Opinión</h3>
                 <form>
                     <fieldset>
-                        <legend>Deje su comentario</legend> 
-                        Nombre: <input type="text"><br>
-                        <input type="radio" value="Hombre" checked="">Hombre
-                        <input type="radio" value="Mujer">Mujer<br>                        
+                        <legend>Deje su comentario</legend>
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="nombre"/><br>
+                        <label for="hombre">Hombre </label>
+                        <input type="radio" id="hombre" checked=""/>
+                        <label for="mujer">Mujer </label>
+                        <input type="radio" id="mujer"/><br>                        
                         Comentario<br>
                         <textarea rows="3" cols="45">
                             
@@ -140,10 +148,7 @@
                         <input type="reset" value="Borrar"/>
                     </fieldset> 
                 </form>
-            
-               
-            </div>
-        </div>
+            </aside>  
     </body>
-    
+
 </html>

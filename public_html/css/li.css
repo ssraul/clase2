@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+ul{
+    list-style-type: none;
+    border-style: solid;
+    border-color: #99ccff;
+    border-width: 1px;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+li{
+    border-style: solid;
+    border-color: #99ccff;
+    border-width: 1px;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 5rem;
+    text-align: center;
+    color: gray;
+    background-image: linear-gradient(to bottom,whitesmoke,#D3E3FF);
+    display: inline-block;
+    position: absolute;
+}
+
+li:first-of-type{
+    position: relative;
+}
+
+li:nth-of-type(3){
+    right: 0;
+}
+
+li:nth-of-type(2){
+    left: calc(50% - 1px - 0.5rem - 2.5rem);
+}
+
+
+

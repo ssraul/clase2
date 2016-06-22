@@ -1,13 +1,56 @@
 @charset "UTF-8";
 
 body{
-    font-family: 'Rosario';
+    font-family: 'Rosario', helvetica, arial;
     font-size: 16px;
     color:black;
     text-align: justify;
     line-height: 1.5rem;
     margin-left: 2rem;
     
+}
+
+/*lenguaqje gallego*/
+:lang(gl){
+    font-family: cursive;
+}
+
+/*para hacer las comillas*/
+span{
+    quotes: "\201C" "\201D";
+}
+span:before, span:after{
+    color:black;
+}
+span:before{
+    content: open-quote;
+}
+
+span:after{
+    content: close-quote;
+}
+
+h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    font-size: 0.75rem;
+    color:olivedrab;
+}
+
+pre{
+    font-family: monospace;
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+    color: steelblue;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    width: 75%;
+    margin: auto;
+    background-color: lightgray;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header{
@@ -21,23 +64,22 @@ header{
 h1{
     font-size: 3rem;
     font-weight: bold;
-    color:greenyellow;
+    color:#ff9;
     text-align: center;
-    
     
 }
 
 h2{
     font-size: 1.5rem;
-    color:mediumspringgreen;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    color:darkgreen;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-left: 1rem;
         
 }
 ul{
     list-style-type: square;
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 
 p{
@@ -48,34 +90,10 @@ p{
 
 figure{
     position: relative;
+    float: left;
+    clear: both;
     top:30px;
     left:30px;    
-}
-
-#pos1{
-    position: relative;
-    top: -155px;
-    left: 15rem;
-}
-
-.sidebar2 {
-	float: left;
-	width: 20%;
-	background-color: lightseagreen;
-	padding: 10px 0;
-}
-
-.container{
-    width: 80%;
-    max-width: 1260px;
-    min-width: 780px;
-    background-color: #FFF;
-    margin: 0 auto;
-}
-
-.fltrt {
-	float: right;
-	margin-left: 8px;
 }
 
 table{
@@ -121,3 +139,50 @@ fieldset{
     border:1px solid #000;
     padding: 10px;
 }
+
+#tres-imagenes{
+    width: 700px;
+    margin: auto;
+
+}
+
+ol{
+    list-style-type: decimal;
+     margin-left: 4rem;
+}
+
+ol li{
+    font-family: cursive;
+   
+}
+#caption2{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+
+form{
+    width: 90%;
+    margin: auto;
+}
+
+section{
+    width: 68%;
+    padding: 2%;
+}
+
+aside{
+    width: 28%;
+    padding: 2%;
+    background-color: #cccccc;
+}
+
+aside, section{
+    float:left;
+    padding: 1%;
+}
+#video{
+    width: 65%;
+    margin: auto;
+}
+
