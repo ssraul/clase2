@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+body{
+    font-family: sans-serif;
+    font-size: 20px;
+    color:black;
+    text-align: justify;
+    line-height: 1.5rem;
+    width: 80%;
+    margin:auto;
+    margin-top: 2rem;
+    
+        
+    
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    counter-reset: contador;
+}
+
+h2{
+    font-size: 1rem;
+    color: lightseagreen;   
+}
+
+h2:before{
+    content: counter(contador) ". ";
+    counter-increment: contador;
+}
+
+#fondo{
+    width: 800px;
+    height: 400px;
+    background-image: url("../image/ex6-mario.png");
+    cursor: url("../image/ex6-smile-christmas.gif"),url("../image/ex6-smile-christmas.cur"), pointer; 
+    position: relative;
+}
+
+#do1{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-image: url("../image/ex6-doraemon.png");
+    right: 10px;
+    top: 80px;
+    background-position: -150px  0px;
+}
+#do2{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-image: url("../image/ex6-doraemon.png");
+    left: 200px;
+    bottom: 125px;
+    background-position: -150px  -450px;
+}
+#do3{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-image: url("../image/ex6-doraemon.png");
+    right: 280px;
+    top: 180px;
+    background-position: -300px  -450px;
+}
+#do4{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-image: url("../image/ex6-doraemon.png");
+    left: 100px;
+    top: -50px;
+    background-position: -450px  -150px;
+}
