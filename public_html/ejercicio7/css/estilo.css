@@ -154,3 +154,7 @@ label{
     width:10%;
     float:left;
 }
+
+input, textarea{
+    background-color: #D3E3FF;
+}

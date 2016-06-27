@@ -28,11 +28,11 @@
             <form action="" method="post">
                 <fieldset>
                     <legend> Datos personales</legend>
-                    <label for="dni">DNI</label><input type="text" required="" placeholder="DNI" size="10"/><br/> 
-                    <label for="nombre">Nombre</label><input type="text" required="" placeholder="Nombre" maxlength="100"/><br/> 
-                    <label for="apellidos">Apellidos</label><input type="text" required="" placeholder="Apellidos" maxlength="255"/><br/> 
-                    <label for="direccion">Dirección</label><input type="text" required="" placeholder="Carrer, numero, escala, pis, porta" maxlength="255"/><br/> 
-                    <label for="cp">Codigo postal</label><input type="text" required="" placeholder="00000"/><br/> 
+                    <label for="dni">DNI</label><input type="text" required="" placeholder="DNI" size="10" autocomplete="on" pattern="^([0-9]{8,8}\-[A-Z])|^)$"/><br/> 
+                    <label for="nombre">Nombre</label><input type="text" required="" placeholder="Nombre" maxlength="100" autocomplete="on"/><br/> 
+                    <label for="apellidos">Apellidos</label><input type="text" required="" placeholder="Apellidos" maxlength="255" autocomplete="on"/><br/> 
+                    <label for="direccion">Dirección</label><input type="text" required="" placeholder="Carrer, numero, escala, pis, porta" maxlength="255" autocomplete="on"/><br/> 
+                    <label for="cp">Codigo postal</label><input type="text" required="" placeholder="00000"autocomplete="on" pattern="^[0-9]{5}$" /><br/> 
                     <label for="poblacion">Población</label><input type="text" required="" placeholder="municipio"/><br/> 
                     
                     
@@ -64,10 +64,10 @@
                 <fieldset>
                     <legend>Relación de cursos</legend>
                     <div id="cursos">
-                        <label for="1a">1a opción</label><input type="text" required="" placeholder="0000" size="4"/><br/> 
-                    <label for="2a">2a opción</label><input type="text" required="" placeholder="0000" size="4" /><br/> 
-                    <label for="3a">3a opción</label><input type="text" required="" placeholder="0000" size="4"/><br/> 
-                    <label for="4a">4a opción</label><input type="text" required="" placeholder="0000" size="4"/><br/> 
+                        <label for="1a">1a opción</label><input type="text" required="" placeholder="0000" size="4" pattern="^[0-9]{4}$"/><br/> 
+                    <label for="2a">2a opción</label><input type="text" required="" placeholder="0000" size="4" pattern="^[0-9]{4}$" /><br/> 
+                    <label for="3a">3a opción</label><input type="text" required="" placeholder="0000" size="4" pattern="^[0-9]{4}$"/><br/> 
+                    <label for="4a">4a opción</label><input type="text" required="" placeholder="0000" size="4" pattern="^[0-9]{4}$"/><br/> 
                     </div>
                 </fieldset>
                 <div id="botones">
