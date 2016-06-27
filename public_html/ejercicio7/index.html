@@ -5,10 +5,96 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
     </head>
     <body>
-        <h1>index</h1>
-        <div></div>
+        <header>
+            <h1>HTML Y CSS</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">Formulario</a></li>
+                <li><a href="">Animación</a></li>
+                <li><a href="">Galeria</a></li>
+                <li><a href="">Video</a></li>
+            </ul>
+        </nav>
+        <div id="principal">
+            <p>Inici > Formulario</p>
+        <main>
+            
+            <h2>Formulario de Preinscripción</h2>
+            <form action="" method="post">
+                <fieldset>
+                    <legend> Datos personales</legend>
+                    <label for="dni">DNI</label><input type="text" required="" placeholder="DNI" size="10"/><br/> 
+                    <label for="nombre">Nombre</label><input type="text" required="" placeholder="Nombre" maxlength="100"/><br/> 
+                    <label for="apellidos">Apellidos</label><input type="text" required="" placeholder="Apellidos" maxlength="255"/><br/> 
+                    <label for="direccion">Dirección</label><input type="text" required="" placeholder="Carrer, numero, escala, pis, porta" maxlength="255"/><br/> 
+                    <label for="cp">Codigo postal</label><input type="text" required="" placeholder="00000"/><br/> 
+                    <label for="poblacion">Población</label><input type="text" required="" placeholder="municipio"/><br/> 
+                    
+                    
+                    <datalist id="lista">
+                        <option value="Barcelona">
+                        <option value="Badalona">
+                        <option value="Reus">
+                        <option value="Girona">
+                        <option value="Tarragona">
+                        <option value="Barcelona">
+                    </datalist>
+                    <label for="provincia">Provincia</label><input type="text" list="lista" step="Barcelona" required="" maxlength="150"/><br/> 
+                    <label for="Nacionalidad">Nacionalidad</label><input type="text" required="" placeholder="Nacionalidad"/><br/> 
+                    <label for="fecha">Fecha de nacimiento</label><input type="text" required="" placeholder="dd-mm-yyyy"/><br/>
+                    <label for="hombre">Hombre</label><input type="radio" required="" value="hombre" checked=""/> 
+                    <label for="mujer">Mujer</label><input type="radio" required="" value="mujer"/><br/>
+                    <label for="telefono">Telefono</label><input type="text" required="" placeholder="000-000-000"/><br/> 
+                    <label for="correo">Correo Electronico</label><input type="text" required="" placeholder="Correo electronico" maxlength="255"/><br/>
+                    <label for="estudis">Estudis</label><input type="text" required=""/><br/> 
+                    <label for="Situación">Situación laboral</label>
+                    <select>
+                        <option value="1">Trabajando</option>
+                        <option value="0">Parado</option>
+                    </select><br/> 
+                    <label for="soc">Inscrit al soc</label><input type="checkbox" checked="" required=""/><br/>
+                    <label for="experiencia">Experiencia laboral</label><br/>
+                    <textarea rows="8" cols="55" placeholder="Escribe aqui tu experiencia"></textarea>
+                    </fieldset>
+                <fieldset>
+                    <legend>Relación de cursos</legend>
+                    <div id="cursos">
+                        <label for="1a">1a opción</label><input type="text" required="" placeholder="0000" size="4"/><br/> 
+                    <label for="2a">2a opción</label><input type="text" required="" placeholder="0000" size="4" /><br/> 
+                    <label for="3a">3a opción</label><input type="text" required="" placeholder="0000" size="4"/><br/> 
+                    <label for="4a">4a opción</label><input type="text" required="" placeholder="0000" size="4"/><br/> 
+                    </div>
+                </fieldset>
+                <div id="botones">
+            <input type="submit" value="Enviar"/>    
+            <input type="reset" value="Borrar"/>
+                </div>                                    
+            </form>
+            <p>Test de expresiones regulares: http://regex101.com/#javascript</p>
+            
+            
+        </main>
+        <aside>
+            <h2>Otros contenidos</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+
+            
+        </aside>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="">Aviso legal</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Creditos</a></li>
+            </ul>           
+        </footer>
     </body>
 </html>
