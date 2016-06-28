@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Rosario:400,700,400italic,700italic);
+
+body {
+    font-family: 'Rosario', sans-serif;
+    font-size: 14pt;
+    font-weight: normal;
+    line-height: 1.5em;
+    text-align: justify;
+    text-align-last: left;
+    color: black;
+    margin: 2em;
+}
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #0099cc;
+}
+
+
+#multicolumna h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #0099cc;
+    background-color: gold;
+    -moz-column-span: all;
+    -webkit-column-span: all;
+    -ms-column-span: all;
+    column-span: all;
+}
+
+
+
+
+figure{
+    border:1px solid black;
+    text-align: center;
+    border-color: goldenrod;
+}
+
+figcaption{
+    margin: 0.5rem;
+}
+
+#multicolumna{
+    /*numero de columnas del contenedor*/
+    column-count: 3;
+    /*porcentaje de ancho de la columna*/
+    column-width: 30%;
+    /*separación entre columnas*/
+    column-gap: 5%;
+    column-rule-width: 2px;
+    column-rule-style: dotted;
+    column-rule-color: green;
+}
