@@ -186,6 +186,8 @@ figure{
     box-shadow: 5px 5px 0 #333;
    -webkit-box-shadow: 5px 5px 0 #333;
    -moz-box-shadow: 5px 5px 0 #333;
+   /*despues de scalar la transcion vuelve a su estado original*/
+   transition: transform 2s;
 }
 
 
@@ -195,11 +197,16 @@ figure:nth-child(3n){
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
     transform: rotate(7deg);
     background-color: #7C7C7C;
-    border: 10px solid #7C7C7C;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
 figure:hover{
+    /*cambiar color de fondo*/
+/*  color:blue;
+    background-color: #ff9;
+    transition-property:background-color;
+    transition-property:color;*/
     /*duracion de la transición*/
     transition-duration: 2s;
     -ms-transform: rotate(0deg);  /*IE 9*/ 
@@ -207,6 +214,73 @@ figure:hover{
     transform: rotate(0deg);
     /*aumento de tamaño*/
     -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-       
+    transform: scale(1.5);           
 }
+
+#nieve{
+    
+    font-size: 100px;
+    color:gold;
+    position:fixed;
+    top:800px;
+    top: 10px;
+    /*ponerlo mirando hacia la derecha*/
+    transform: rotate(180deg);
+    
+    /*definimos la animación*/
+    animation-name: nieve;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 4;  
+}
+
+@keyframes nieve{
+    
+    /*inicio*/
+    from {
+        
+    }
+    /*en medio*/
+    50% {
+        color:whte;
+        top:190px;
+        left:195px;
+    }
+    /*al final del ciclo*/
+    to {
+        
+        color:white;
+        top:950px;
+        left:195px;
+        transform: none;
+        
+    }
+}
+
+#publicidad{
+    width: 600px;
+    height: 200px;
+    background-color: transparent;
+    background-image: url("../image/ex7-banner.png");
+    /*propiedades animación*/
+    animation-name: anuncio;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    /*la animación empieza desde el principio*/
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anuncio{
+    from{
+        background-position:0px  0px;
+    }
+    50%{
+        background-position: 0px  -200px;
+    }
+    to{
+        background-position: 0px  -400px;
+    }
+    }
