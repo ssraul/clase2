@@ -35,6 +35,16 @@ nav ul{
     position: relative;
     width: 90%;
     text-align: right;
+    border-right: 4px solid coral;
+    border-radius: 40px 10px 0 0;
+}
+
+span{
+    font-weight: bold;
+}
+
+input[type="radio"]{
+    margin-right: 2rem;
 }
 
 nav ul li{
