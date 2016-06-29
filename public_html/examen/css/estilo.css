@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Rosario';
+    font-size: 16pt;
+    line-height: 1.5rem;
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    
+}
+
+header{
+    height: 5rem;
+}
+
+h1{
+    font-size: 1.4rem;
+}
+
+h2{
+    color:white;
+    background-color: #1883ba;
+    padding: 0.5rem;
+}
+
+footer{
+    background-color: #99ccff;
+    background-image: url("../image/platon.png");
+    background-repeat: no-repeat;
+    height: 4rem;
+    background-position: 0 -65px;
+    background-position-x: right;
+}
+footer ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 1rem;
+}
+
+footer ul li:before{
+    content:"\2605\0020"; 
+    color:coral;
+}
+
+#columnas{
+    /*numero de columnas del contenedor*/
+    column-count: 2;
+    /*porcentaje de ancho de la columna*/
+    column-width: 40%;
+    /*separación entre columnas*/
+    column-gap: 5%;
+    column-rule-width: 2px;
+    column-rule-style: dotted;
+    column-rule-color: #99ccff;
+}
+
+img{
+    border:1px solid darkorange;
+    margin-top: 1rem;
+    background-color: #FFF;
+}
+figure{
+    text-align: center;
+    background-color: bisque;
+    border: 1px solid darkorange;
+    width: 300px;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+/*comillas en el parrafo */
+
+p.comillas:before{
+    content: "«\0020";
+}
+
+p.comillas:after{
+    content: "\0020»";    
+}
+
+fieldset{
+    border:2px solid #99ccff;
+    border-radius: 20px;
+    width: 40%;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+legend{
+    margin-left: 1rem;
+}
+
+label{
+    margin: 1rem;
+    margin-top: 2rem;
+    
+}
+
+input[type="text"]{
+    margin-left: 9rem;
+    margin-top: 0.5rem;   
+}
+
+select{
+   margin-left: 9rem;
+    margin-top: 0.5rem;   
+}
+
+
+.botones{
+    text-align: left;
+    -ms-text-align-last: left; 
+}
+.botones input{
+    width: 8rem;
+    background-image: linear-gradient(to bottom, #FFF, #99ccff);
+    border-radius: 10px;
+    margin-right: 3rem;
+    padding: 0.5rem 0px;
+    border:1px solid #0099cc;    
+    text-align: center;
+    color: #666666;
+    cursor: pointer;
+    box-shadow: 5px 5px 0 lightgray;
+    
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+    transition-duration: 2s;
+    -ms-transform: rotate(360deg);  /*IE 9*/ 
+    -webkit-transform: rotate(360deg);  /*Chrome, Safari, Opera*/ 
+    transform: rotate(360deg);    
+}
+
+#logo{
+    clear:both;
+    float:left;
+    margin-top: 1rem;
+    
+}
+
+#logo1{
+    font-family: 'Rosario';    
+}
+
+#logo2{
+    font-family: 'Lobster';
+    font-size: 1.8rem;
+    text-shadow: 5px 5px 5px #aaa;
+    text-decoration: underline;
+}
+
+#inicio{
+    float:right;
+}
+
+#logo1{
+    color:fuchsia;
+}
+#logo3{
+    color:#1883ba;
+    color:fuchsia;
+    padding-left: 2rem;
+}
+
+#inicio ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+#inicio ul li:first-child{
+    color:#0099cc;
+}
+
+#inicio ul li:after {
+    content:">"; 
+    color:black;
+}
+
+input[type="text"]{
+    width: 30%;
+}
+
+input{
+    background-color:#D3E3FF;
+    border: 1px solid #00b3ff;
+}
+
+select{
+    background-color: #D3E3FF;
+}
