@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>examen</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Rosario' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>       
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <span id="palabra1">la</span><span id="palabra2">ReBotiga</span><br/>
+                <span id="palabra3">d'Internet</span>
+            </div>
+            <div id="menu">
+                <nav class="navegacion">
+                    <ul>
+                        <li><a href="">Inici</a></li>
+                        <li>Nous clients </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <section id="formulario">
+            <h1>Nous clients</h1>        
+            <form> 
+                <fieldset>
+                    <legend>Dades del client</legend>
+                    <table>
+                        <tr><td><label>CIF</label></td><td><input type="text" pattern="^\d{8}\-\w$" placeholder="CIF" required=""/></td></tr>
+                        <datalist id="nombres">
+                            <option value="Alpha SL">
+                            <option value="Beta SL">
+                            <option value="Gamma SL">
+                        </datalist>
+                        <tr><td><label>Nom</label></td><td><input type="text" required="" placeholder="Nombre Empresa" list="nombres"/></td></tr>                                 
+                    </table>                 
+                </fieldset>
+                <fieldset>
+                    <legend>Dades del producte</legend>
+                    <table>
+                        <tr><td><label>Referéncia</label></td><td> <input type="text" required="" pattern="^[0-9]\-\d{4}$" placeholder="Escribe la referencia"/></td></tr>
+                        <tr><td><label>Producte</label></td>
+                            <td>
+                                <select required="">
+                                    <optgroup label="Cadires">
+                                        <option>Cadira de rodes</option>
+                                        <option>Cadira</option>
+                                    </optgroup>
+                                    <optgroup label="Taula"></optgroup>
+                                    <option>Taula rodona</option>
+                                    <option>Taula quadrada</option>
+                                </select>
+                            </td>
+                        </tr>                       
+                    </table>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Forma de pagament</legend>
+                    <table id="pago">
+                        <tr>
+                            <td><input type="radio" name="sexo" value="1" checked=""/></td>
+                            <td><label>Efectiu</label></td>
+                            <td><input type="radio" name="sexo" value="2"/></td>
+                            <td><label>Targeta</label></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <div id="botones">
+                <input type="submit" value="enviar"/>
+                <input type="reset" value="reiniciar"/>
+                </div>
+            </form>
+        </section>
+
+        <section id="multicolumna">        
+            <h1>Instruccions</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+            <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi.</p>
+
+            <p>Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. In convallis tellus a mauris. Curabitur non elit ut libero tristique sodales. Mauris a lacus. Donec mattis semper leo. In hac habitasse platea dictumst.</p>
+
+            <p class="comillas">Proin nonummy, lacus eget pulvinar lacinia, pede felis dignissim leo, vitae tristique magna lacus sit amet eros. Nullam ornare. Praesent odio ligula, dapibus sed, tincidunt eget, dictum ac, nibh. Nam quis lacus. Nunc eleifend molestie velit. Morbi lobortis quam eu velit.</p>
+
+            <figure>
+                <img width="150" height="199" src="image/platon.png"/>
+                <figcaption>El filòsof Plató</figcaption>
+            </figure>
+        </section>
+        <footer>
+            <ul>
+                <li>C. de Pi, 2. Barcelona 08000</li>
+                <li>Avís Legal</li>
+                <li>Contacta</li>
+                <li>Privacitat</li>
+            </ul>
+        </footer>
+    </body>
+</html>
