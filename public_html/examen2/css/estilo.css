@@ -4,6 +4,7 @@ body{
     font-family: 'Rosario', sans-serif;
     font-size: 16pt;
     line-height: 24px;
+    line-height: 24px;
     line-height: 1.5rem;
     text-align: justify;
     
@@ -14,23 +15,29 @@ body{
 
 #formulario>h1{
     font-size: 22px;
+    font-size: 22px;
     font-size: 1.4rem;
 }
 #formulario{
+    margin-top: 48px;
     margin-top: 3rem;
+    margin-bottom: 32px;
     margin-bottom: 2rem;
 }
 
 #multicolumna>h1{   
     font-size: 22px;   
+    font-size: 22px;   
     font-size: 1.4rem;
     background-color: #1883ba;
     color:white;
+    padding: 8px;
     padding: 8px;
     padding: 0.5rem;
 }
 
 #palabra1, #palabra3{
+    font-size: 22px;
     font-size: 22px;
     font-size: 1.4rem;
     color: #f22fd3;
@@ -38,10 +45,12 @@ body{
 
 #palabra3{
     margin-left: 36px;
+    margin-left: 36px;
     margin-left: 2.3rem;
 }
 
 #palabra2{
+    font-size: 32px;
     font-size: 32px;
     font-size: 2rem;
     font-family: 'Lobster';
@@ -56,6 +65,7 @@ footer{
     background-image: url("../image/platon.png");
     background-repeat: no-repeat;
     height: 48px;
+    height: 48px;
     height: 3rem;
     background-position-x: right;
     background-position-y: -73px;
@@ -66,6 +76,7 @@ footer ul li{
     list-style-type: none;
     /*ordenar la lista de forma horizontal*/
     display: inline-block;
+    padding: 12px;
     padding: 12px;
     padding: 0.8rem;
 }
@@ -104,6 +115,7 @@ figure{
     /*centrar imagen y texto*/
     text-align: center;
     padding: 16px;
+    padding: 16px;
     padding: 1rem;
     width: 280px;
     margin: auto;
@@ -129,10 +141,13 @@ fieldset{
     border-color: #6495ed;
     border-radius: 15px;
     padding: 32px;
+    padding: 32px;
     padding: 2rem;
     width: 30vw;
     margin-top: 32px;
+    margin-top: 32px;
     margin-top: 2rem;
+    margin-bottom: 32px;
     margin-bottom: 32px;
     margin-bottom: 2rem;
 }
@@ -141,6 +156,7 @@ fieldset{
 input[type="text"]{
     border-color: #1883ba;
     background-color: #f0f5ff;
+    padding: 4px;
     padding: 4px;
     padding: 0.25rem;
 }
@@ -160,6 +176,7 @@ header{
 }
 header{
     margin-top: 64px;
+    margin-top: 64px;
     margin-top: 4rem;
 }
 
@@ -175,6 +192,7 @@ header{
 tr td{
     width: 300px;
     padding: 4px;
+    padding: 4px;
     padding: 0.3rem;
 }
 tr td label{
@@ -186,18 +204,26 @@ tr td label{
 }
 
 #botones input{
+    margin-right: 48px;
     margin-right: 3rem;
+    padding: 8px;
     padding: 0.5rem;
+    padding-left: 24px;
     padding-left: 1.5rem;
+    padding-right: 24px;
     padding-right: 1.5rem;
     border-radius: 10px;
+    background: -webkit-linear-gradient(white, #d3e3ff);
     background: linear-gradient(white,#d3e3ff);
     border: 1px solid #1883ba;
     box-shadow: 2px 2px 5px #999;
 }
 input[type="submit"]:hover, input[type="reset"]:hover{
-    transition-duration: 2s;
-    transform: rotate(360deg);    
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s;
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);    
 }
 
 .navegacion ul li{
