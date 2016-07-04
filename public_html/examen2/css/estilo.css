@@ -176,7 +176,7 @@ header{
 
 tr td{
     width: 300px;
-    padding: 4px;
+    padding: 3px;
     padding: 0.3rem;
 }
 tr td label{
@@ -226,4 +226,31 @@ input[type="submit"]:hover, input[type="reset"]:hover{
 .navegacion ul li a:hover{
     text-decoration: underline;
     color:blue;
+}
+
+/*validación del formulario con colores*/
+input:focus:invalid, select:focus:invalid{
+    background-color: #f7cbcb;
+}
+input:focus:valid, select:focus:valid{
+    background-color: #d0fce8;
+}
+
+/*validacion de formulario con simbolos*/
+input:focus:invalid + span:after{
+    content:"✖";
+    text-shadow: 2px 2px 2px #aaa;
+    color:red;
+    position: relative;
+    left:10px;
+}
+
+input:focus:valid + span:after{
+    content:"✔";
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #aaa;
+    color:green;
+    position: relative;
+    left:10px;
+    
 }

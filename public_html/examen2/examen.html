@@ -32,22 +32,22 @@
                 <fieldset>
                     <legend>Dades del client</legend>
                     <table>
-                        <tr><td><label>CIF</label></td><td><input type="text" pattern="^\d{8}\-\w$" placeholder="CIF" required=""/></td></tr>
+                        <tr><td><label>CIF</label></td><td><input type="text" pattern="^\d{8}\-\w$" placeholder="CIF" required/><span></span></td></tr>
                         <datalist id="nombres">
                             <option value="Alpha SL">
                             <option value="Beta SL">
                             <option value="Gamma SL">
                         </datalist>
-                        <tr><td><label>Nom</label></td><td><input type="text" required="" placeholder="Nombre Empresa" list="nombres"/></td></tr>                                 
+                        <tr><td><label>Nom</label></td><td><input type="text" required placeholder="Nombre Empresa" list="nombres"/><span></span></td></tr>                                 
                     </table>                 
                 </fieldset>
                 <fieldset>
                     <legend>Dades del producte</legend>
                     <table>
-                        <tr><td><label>Referéncia</label></td><td> <input type="text" required="" pattern="^[0-9]\-\d{4}$" placeholder="Escribe la referencia"/></td></tr>
+                        <tr><td><label>Referéncia</label></td><td> <input type="text" required pattern="^[0-9]\-\d{4}$" placeholder="Escribe la referencia"/><span></span></td></tr>
                         <tr><td><label>Producte</label></td>
                             <td>
-                                <select required="">
+                                <select required>
                                     <optgroup label="Cadires">
                                         <option>Cadira de rodes</option>
                                         <option>Cadira</option>
